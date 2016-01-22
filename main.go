@@ -68,5 +68,5 @@ func main() {
 
     r := mux.NewRouter()
     r.HandleFunc("/{user}/{package}/zipball/{version}/", PackageGetHandler)
-    http.ListenAndServe(":8001", r)
+    http.ListenAndServe(":80", r)
 }
